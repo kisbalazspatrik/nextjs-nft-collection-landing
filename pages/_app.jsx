@@ -7,6 +7,10 @@ export default function App({ Component, pageProps }) {
       heading: "Space Grotesk",
       body: "Open Sans",
     },
+    config: {
+      initialColorMode: "dark",
+      useSystemColorMode: false,
+    },
   });
 
   return (
