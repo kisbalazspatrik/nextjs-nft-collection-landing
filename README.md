@@ -22,9 +22,7 @@ npm run dev
 
 This template includes the following features:
 
-- A home page that displays a list of NFTs.
-- A detail page for each NFT that displays its metadata and allows users to purchase it.
-- A form for minting new NFTs.
+- A home page that displays the collection details.
 - Integration with Chakra for easy styling.
 
 ## Contributing
