@@ -4,6 +4,7 @@ import { colors } from "@/utils/colors";
 import Wrapper from "@/components/Wrapper";
 import Button from "@/components/Button";
 import ReactCurvedText from "react-curved-text";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -18,6 +19,8 @@ const Header = () => {
       h="100%"
       align="center"
       justify="center"
+      pb={{ base: 8, lg: 0 }}
+      id="header"
     >
       <Wrapper gap={12} flexDir={{ base: "column", lg: "row" }} w="100%">
         <Flex
@@ -26,37 +29,30 @@ const Header = () => {
           position="relative"
           mt={12}
         >
-          <Box
-            className="spin"
-            width={200}
-            height={200}
-            zIndex={4}
+          <Text
+            zIndex={3}
+            transform="rotate(20deg)"
             position="absolute"
-            bottom={-5}
-            left={"10%"}
+            top={0}
+            right={0}
+            color={colors.primary}
+            fontWeight={800}
+            textShadow="0px 0px 10px rgba(0,0,0,1)"
           >
-            <ReactCurvedText
-              width={200}
-              height={200}
-              cx={100}
-              cy={100}
-              rx={100}
-              ry={100}
-              startOffset={0}
-              text={"100% UNIQUE - 100% RARE - 100% FUN - 100% ART -"}
-              textProps={{
-                style: {
-                  fontSize: 16,
-                  textShadow: "0px 0px 10px rgba(0,0,0,1)",
-                },
-              }}
-              textPathProps={{
-                fill: colors.primary,
-                letterSpacing: 4.5,
-                fontWeight: 800,
-              }}
-            />
-          </Box>
+            GET YOURS TODAY
+          </Text>
+          <Text
+            zIndex={3}
+            className="mint-text"
+            position="absolute"
+            top={5}
+            left={0}
+            color={colors.primary}
+            fontWeight={800}
+            textShadow="0px 0px 10px rgba(0,0,0,1)"
+          >
+            MINTING LIVE
+          </Text>
           <Image
             src="/nfts/2.png"
             w={240}
@@ -136,7 +132,9 @@ const Header = () => {
             valuable.
           </Text>
           <Flex justify={{ base: "center", lg: "flex-start" }}>
-            <Button>More info</Button>
+            <Link href="#collection">
+              <Button>More info</Button>
+            </Link>
           </Flex>
           <Flex
             mt={{ base: 8, lg: "auto" }}
@@ -144,14 +142,14 @@ const Header = () => {
             flexDir={{ base: "column", lg: "row" }}
           >
             <Text fontSize={48} fontWeight={700}>
-              10K+
+              9K+
             </Text>
             <Text ml={4} textTransform="uppercase" fontWeight={600}>
               Minted
             </Text>
             <Divider orientation="vertical" mx={4} color="white" />
             <Text fontSize={48} fontWeight={700}>
-              8K+
+              6K+
             </Text>
             <Text ml={4} textTransform="uppercase" fontWeight={600}>
               Unique Holders

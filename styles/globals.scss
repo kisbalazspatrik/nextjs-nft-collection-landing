@@ -10,6 +10,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -38,4 +39,47 @@ a {
   to {
     transform: rotate(360deg);
   }
+}
+
+.grow {
+  animation: grow 0.5s ease-in-out infinite alternate;
+  transform-origin: bottom center;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.mint-text {
+  animation: mint-text 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes mint-text {
+  from {
+    transform: scale(1) rotate(-45deg);
+  }
+  to {
+    transform: scale(1.1) rotate(-45deg);
+  }
+}
+
+.footer-bg {
+  background-color: hsla(218, 77%, 3%, 1);
+  background-image: radial-gradient(
+      at 99% 99%,
+      hsla(82, 94%, 62%, 0.13) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 4% 7%, hsla(82, 94%, 62%, 0.13) 0px, transparent 50%),
+    radial-gradient(at 4% 28%, hsla(217, 72%, 8%, 1) 0px, transparent 50%),
+    radial-gradient(at 4% 73%, hsla(217, 72%, 8%, 1) 0px, transparent 50%),
+    radial-gradient(at 4% 49%, hsla(217, 72%, 8%, 1) 0px, transparent 50%),
+    radial-gradient(at 4% 93%, hsla(217, 72%, 8%, 1) 0px, transparent 50%),
+    radial-gradient(at 94% 9%, hsla(217, 72%, 8%, 1) 0px, transparent 50%),
+    radial-gradient(at 4% 8%, hsla(218, 72%, 8%, 1) 0px, transparent 50%);
 }

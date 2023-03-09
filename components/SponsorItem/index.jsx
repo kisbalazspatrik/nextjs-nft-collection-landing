@@ -11,7 +11,7 @@ const SponsorItem = ({ img, href }) => {
       opacity={0.5}
       whileHover={{ scale: 1.05, opacity: 1 }}
     >
-      <Image src={img} h={8} />
+      <Image src={img} h={{ base: 6, md: 7, lg: 8 }} />
     </Link>
   );
 };

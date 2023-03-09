@@ -1,4 +1,6 @@
 import Loader from "@/components/Loader";
+import CollectionInfo from "@/sections/CollectionInfo";
+import Footer from "@/sections/Footer";
 import Header from "@/sections/Header";
 import Sponsors from "@/sections/Sponsors";
 import { Flex } from "@chakra-ui/react";
@@ -24,6 +26,9 @@ export default function Home() {
       </Head>
       <Header />
       <Sponsors />
+      <CollectionInfo />
+
+      <Footer />
     </>
   );
 }
