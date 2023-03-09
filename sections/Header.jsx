@@ -1,9 +1,9 @@
 import React from "react";
-import DarkBg from "@/public/dark-bg.png";
-import { Divider, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import { Box, Divider, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import { colors } from "@/utils/colors";
 import Wrapper from "@/components/Wrapper";
 import Button from "@/components/Button";
+import ReactCurvedText from "react-curved-text";
 
 const Header = () => {
   return (
@@ -26,8 +26,39 @@ const Header = () => {
           position="relative"
           mt={12}
         >
+          <Box
+            className="spin"
+            width={200}
+            height={200}
+            zIndex={4}
+            position="absolute"
+            bottom={-5}
+            left={"10%"}
+          >
+            <ReactCurvedText
+              width={200}
+              height={200}
+              cx={100}
+              cy={100}
+              rx={100}
+              ry={100}
+              startOffset={0}
+              text={"100% UNIQUE - 100% RARE - 100% FUN - 100% ART -"}
+              textProps={{
+                style: {
+                  fontSize: 16,
+                  textShadow: "0px 0px 10px rgba(0,0,0,1)",
+                },
+              }}
+              textPathProps={{
+                fill: colors.primary,
+                letterSpacing: 4.5,
+                fontWeight: 800,
+              }}
+            />
+          </Box>
           <Image
-            src="/nfts/1.jpg"
+            src="/nfts/2.png"
             w={240}
             h={360}
             objectFit="cover"
@@ -36,9 +67,10 @@ const Header = () => {
             top={24}
             left={"25%"}
             zIndex={2}
+            boxShadow="0px 0px 20px 0px rgba(0,0,0,0.5)"
           />
           <Image
-            src="/nfts/2.jpg"
+            src="/nfts/1.png"
             w={240}
             h={360}
             objectFit="cover"
@@ -47,9 +79,36 @@ const Header = () => {
             top={0}
             right={"25%"}
             zIndex={1}
+            boxShadow="0px 0px 20px 0px rgba(0,0,0,0.5)"
           />
         </Flex>
-        <Flex flexDir="column" gap={6} w={{ base: "100%", lg: "50%" }}>
+        <Flex
+          flexDir="column"
+          gap={6}
+          w={{ base: "100%", lg: "50%" }}
+          position="relative"
+        >
+          {/* Symbols */}
+          <Image
+            src="/spiral.png"
+            w={8}
+            h={8}
+            position="absolute"
+            top={0}
+            right={0}
+            transform="rotate(45deg)"
+          />
+
+          <Image
+            src="/tri-spiral.png"
+            w={8}
+            h={8}
+            position="absolute"
+            bottom={200}
+            right={100}
+            transform="rotate(45deg)"
+          />
+
           <Text
             color={colors.primary}
             fontWeight={800}
@@ -85,17 +144,17 @@ const Header = () => {
             flexDir={{ base: "column", lg: "row" }}
           >
             <Text fontSize={48} fontWeight={700}>
-              3K+
+              10K+
             </Text>
-            <Text ml={4} textTransform="uppercase">
+            <Text ml={4} textTransform="uppercase" fontWeight={600}>
               Minted
             </Text>
             <Divider orientation="vertical" mx={4} color="white" />
             <Text fontSize={48} fontWeight={700}>
-              1.5K+
+              8K+
             </Text>
-            <Text ml={4} textTransform="uppercase">
-              Holders
+            <Text ml={4} textTransform="uppercase" fontWeight={600}>
+              Unique Holders
             </Text>
           </Flex>
         </Flex>
@@ -106,27 +165,60 @@ const Header = () => {
           h={600}
           display={{ base: "none", lg: "flex" }}
         >
+          <Box
+            className="spin"
+            width={250}
+            height={250}
+            zIndex={4}
+            position="absolute"
+            bottom={-10}
+            right={{ base: 0, xl: -10 }}
+          >
+            <ReactCurvedText
+              width={250}
+              height={250}
+              cx={125}
+              cy={125}
+              rx={125}
+              ry={125}
+              startOffset={0}
+              text={"100% UNIQUE - 100% RARE - 100% FUN - 100% ART -"}
+              textProps={{
+                style: {
+                  fontSize: 24,
+                  textShadow: "0px 0px 10px rgba(0,0,0,1)",
+                },
+              }}
+              textPathProps={{
+                fill: colors.primary,
+                letterSpacing: 3.5,
+                fontWeight: 800,
+              }}
+            />
+          </Box>
           <Image
-            src="/nfts/1.jpg"
+            src="/nfts/2.png"
             w={360}
-            h={540}
+            h={500}
             objectFit="cover"
             borderRadius={24}
             position="absolute"
             bottom={0}
             left={0}
-            zIndex={2}
+            zIndex={3}
+            boxShadow="0px 0px 20px 0px rgba(0,0,0,0.5)"
           />
           <Image
-            src="/nfts/2.jpg"
+            src="/nfts/1.png"
             w={360}
-            h={540}
+            h={500}
             objectFit="cover"
             borderRadius={24}
             position="absolute"
             top={0}
             right={0}
             zIndex={1}
+            boxShadow="0px 0px 20px 0px rgba(0,0,0,0.5)"
           />
         </Flex>
       </Wrapper>
