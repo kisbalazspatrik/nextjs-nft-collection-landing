@@ -9,7 +9,7 @@
     <img src="https://img.shields.io/github/issues-pr/kisbalazspatrik/nextjs-nft-collection-landing?color=0088ff&style=for-the-badge&logo=github"/>
   </a>
 </div>
----
+------------
 
 # NextJS NFT Project Template
 
