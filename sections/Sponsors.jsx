@@ -1,32 +1,9 @@
 import SponsorItem from "@/components/SponsorItem";
 import Wrapper from "@/components/Wrapper";
 import { colors } from "@/utils/colors";
+import { sponsors } from "@/utils/sponsors";
 import { Divider, Flex } from "@chakra-ui/react";
-import { motion } from "framer-motion";
 import React from "react";
-
-const data = [
-  {
-    img: "/sponsors/wagmi.svg",
-    href: "https://wagmi.sh/",
-  },
-  {
-    img: "/sponsors/nfteam.svg",
-    href: "https://nfteam.eu/",
-  },
-  {
-    img: "/sponsors/nfteam.svg",
-    href: "https://nfteam.eu/",
-  },
-  {
-    img: "/sponsors/nfteam.svg",
-    href: "https://nfteam.eu/",
-  },
-  {
-    img: "/sponsors/wagmi.svg",
-    href: "https://wagmi.sh/",
-  },
-];
 
 const Sponsors = () => {
   return (
@@ -40,7 +17,7 @@ const Sponsors = () => {
           flexWrap="wrap"
           align="center"
         >
-          {data.map((item, index) => (
+          {sponsors.map((item, index) => (
             <SponsorItem key={index} {...item} />
           ))}
         </Flex>
