@@ -1,14 +1,6 @@
 <a href="https://github.com/kisbalazspatrik/nextjs-nft-collection-landing">
     <img width="100%" src="https://i.imgur.com/WtEo7sH.png">
   </a>
-<div style="display: flex;gap:8px;">
-<a href="https://github.com/kisbalazspatrik/nextjs-nft-collection-landing/issues">
-    <img src="https://img.shields.io/github/issues/kisbalazspatrik/nextjs-nft-collection-landing?color=0088ff&style=for-the-badge&logo=github"/>
-  </a>
-<a href="https://github.com/kisbalazspatrik/nextjs-nft-collection-landing/pulls">
-    <img src="https://img.shields.io/github/issues-pr/kisbalazspatrik/nextjs-nft-collection-landing?color=0088ff&style=for-the-badge&logo=github"/>
-  </a>
-</div>
 
 # NextJS NFT Project Template
 
@@ -44,3 +36,12 @@ Contributions are welcome! To contribute, simply fork this repository, create a 
 ## License
 
 This project is licensed under the MIT License.
+
+<div style="display: flex;gap:8px;">
+<a href="https://github.com/kisbalazspatrik/nextjs-nft-collection-landing/issues">
+    <img src="https://img.shields.io/github/issues/kisbalazspatrik/nextjs-nft-collection-landing?color=0088ff&style=for-the-badge&logo=github"/>
+  </a>
+<a href="https://github.com/kisbalazspatrik/nextjs-nft-collection-landing/pulls">
+    <img src="https://img.shields.io/github/issues-pr/kisbalazspatrik/nextjs-nft-collection-landing?color=0088ff&style=for-the-badge&logo=github"/>
+  </a>
+</div>
