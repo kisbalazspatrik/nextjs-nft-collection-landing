@@ -24,7 +24,7 @@ const Footer = () => {
     <Flex justify={"center"} className="footer-bg">
       <Wrapper
         justifyContent="space-between"
-        gap={{ base: 8, lg: 0 }}
+        gap={{ base: 16, lg: 0 }}
         w="100%"
         my={32}
         flexDir={{ base: "column-reverse", lg: "row" }}
@@ -42,18 +42,21 @@ const Footer = () => {
         </Flex>
         <Flex columnGap={8} rowGap={2} flexWrap="wrap" justify={"center"}>
           {data.map((item, index) => (
-            <Link href={item.href} key={index}>
-              <Text
-                color={colors.darkerText}
-                fontSize="sm"
-                fontWeight={600}
-                _hover={{ color: colors.primary }}
-                cursor="pointer"
-                transition={"all 0.2s ease-in-out"}
-              >
-                {item.text}
-              </Text>
-            </Link>
+            <Text
+              color={colors.darkerText}
+              fontSize="sm"
+              fontWeight={600}
+              _hover={{ color: colors.primary }}
+              cursor="pointer"
+              transition={"all 0.2s ease-in-out"}
+              as="a"
+              href={item.href}
+              key={index}
+              w={{ base: "100%", lg: "auto" }}
+              textAlign={{ base: "center", lg: "left" }}
+            >
+              {item.text}
+            </Text>
           ))}
         </Flex>
       </Wrapper>
