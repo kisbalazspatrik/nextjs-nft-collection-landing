@@ -9,6 +9,7 @@
     <img src="https://img.shields.io/github/issues-pr/kisbalazspatrik/nextjs-nft-collection-landing?color=0088ff&style=for-the-badge&logo=github"/>
   </a>
 </div>
+
 # NextJS NFT Project Template
 
 This is a NextJS template for NFT projects. This template was inspired by a similar template that was originally created in WordPress, but has been reimagined and built using a different platform for modern web development.
