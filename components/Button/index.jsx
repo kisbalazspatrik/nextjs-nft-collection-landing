@@ -2,12 +2,12 @@ import React from "react";
 import { Button as Btn } from "@chakra-ui/react";
 import { colors } from "@/utils/colors";
 
-const Button = ({ children }) => {
+const Button = ({ children, secondary }) => {
   return (
     <Btn
       variant="unstyled"
-      bg={colors.primary}
-      color={"black"}
+      bg={!secondary ? colors.primary : "white"}
+      color={!secondary ? "black" : colors.darkerText}
       _hover={{ opacity: 0.8 }}
       borderRadius={"full"}
       p={8}
