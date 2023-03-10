@@ -1,4 +1,4 @@
-import Button, { CircleButton } from "@/components/Button";
+import { CircleButton } from "@/components/Button";
 import Wrapper from "@/components/Wrapper";
 import { colors } from "@/utils/colors";
 import { Flex, Heading, IconButton, Image, Text } from "@chakra-ui/react";
@@ -11,7 +11,7 @@ const ArtistInfo = () => {
     <Flex
       bg={colors.darkBg}
       justify="center"
-      id="collection"
+      id="artist"
       position="relative"
     >
       <Image
