@@ -1,6 +1,7 @@
 import Loader from "@/components/Loader";
 import ArtistInfo from "@/sections/ArtistInfo";
 import CollectionInfo from "@/sections/CollectionInfo";
+import CTA from "@/sections/CTA";
 import Footer from "@/sections/Footer";
 import Header from "@/sections/Header";
 import Sponsors from "@/sections/Sponsors";
@@ -29,6 +30,7 @@ export default function Home() {
       <Sponsors />
       <CollectionInfo />
       <ArtistInfo />
+      <CTA />
       <Footer />
     </>
   );
