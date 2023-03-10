@@ -40,7 +40,7 @@ const Footer = () => {
             . All rights reserved.
           </Text>
         </Flex>
-        <Flex gap={8}>
+        <Flex columnGap={8} rowGap={2} flexWrap="wrap" justify={"center"}>
           {data.map((item, index) => (
             <Link href={item.href} key={index}>
               <Text

@@ -6,7 +6,32 @@ import React from "react";
 
 const CollectionInfo = () => {
   return (
-    <Flex bg={colors.darkBg} justify="center" id="collection">
+    <Flex
+      bg={colors.darkBg}
+      justify="center"
+      id="collection"
+      position="relative"
+    >
+      <Image
+        src="/detail1.png"
+        position="absolute"
+        w={150}
+        h={"auto"}
+        top={0}
+        right={32}
+        opacity={0.25}
+        zIndex={1}
+      />
+      <Image
+        src="/detail2.png"
+        position="absolute"
+        w={150}
+        h={"auto"}
+        bottom={0}
+        left={{ base: 8, lg: 32 }}
+        opacity={0.25}
+        zIndex={1}
+      />
       <Wrapper flexDir={{ base: "column", lg: "row" }} gap={8} mb={32}>
         <Flex flexDir={"column"} w={{ base: "100%", lg: "50%" }} align="center">
           <Flex
@@ -15,6 +40,7 @@ const CollectionInfo = () => {
             pt={8}
             borderRadius={24}
             flexDir="column"
+            zIndex={2}
           >
             <Image
               src="/nfts/3.gif"

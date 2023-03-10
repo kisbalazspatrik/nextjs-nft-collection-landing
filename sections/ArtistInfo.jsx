@@ -8,7 +8,22 @@ import { FiInstagram, FiTwitter } from "react-icons/fi";
 
 const ArtistInfo = () => {
   return (
-    <Flex bg={colors.darkBg} justify="center" id="collection">
+    <Flex
+      bg={colors.darkBg}
+      justify="center"
+      id="collection"
+      position="relative"
+    >
+      <Image
+        src="/detail3.png"
+        position="absolute"
+        w={150}
+        h={"auto"}
+        bottom={0}
+        right={{ base: 8, lg: 64 }}
+        opacity={0.25}
+        zIndex={1}
+      />
       <Wrapper flexDir={{ base: "column-reverse", lg: "row" }} gap={8} mb={32}>
         <Flex flexDir={"column"} w={{ base: "100%", lg: "50%" }} gap={8}>
           <Text
