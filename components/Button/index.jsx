@@ -19,4 +19,22 @@ const Button = ({ children }) => {
   );
 };
 
+export const CircleButton = ({ children, ...rest }) => {
+  return (
+    <Btn
+      variant="unstyled"
+      bg={colors.primary}
+      color={"black"}
+      _hover={{ opacity: 0.8 }}
+      borderRadius={"full"}
+      display="flex"
+      alignItems={"center"}
+      justifyContent={"center"}
+      {...rest}
+    >
+      {children}
+    </Btn>
+  );
+};
+
 export default Button;

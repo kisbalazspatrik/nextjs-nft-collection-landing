@@ -7,7 +7,7 @@ import React from "react";
 const CollectionInfo = () => {
   return (
     <Flex bg={colors.darkBg} justify="center" id="collection">
-      <Wrapper flexDir={{ base: "column", lg: "row" }} gap={8}>
+      <Wrapper flexDir={{ base: "column", lg: "row" }} gap={8} mb={32}>
         <Flex flexDir={"column"} w={{ base: "100%", lg: "50%" }} align="center">
           <Flex
             bg={colors.secondaryBg}
@@ -42,6 +42,7 @@ const CollectionInfo = () => {
             textTransform="uppercase"
             color={colors.primary}
             fontWeight={800}
+            textAlign={{ base: "center", lg: "left" }}
           >
             About the collection
           </Text>
@@ -52,10 +53,15 @@ const CollectionInfo = () => {
               lg: "6xl",
               xl: "6xl",
             }}
+            textAlign={{ base: "center", lg: "left" }}
           >
             Unique Pixel artwork NFTs
           </Heading>
-          <Text color={colors.darkerText}>
+          <Text
+            color={colors.darkerText}
+            letterSpacing={1.2}
+            textAlign={{ base: "center", lg: "left" }}
+          >
             Have you heard of non-fungible tokens (NFTs)? They're like digital
             certificates that certify something to be one-of-a-kind and not
             interchangeable. NFTs are stored on a digital ledger called a

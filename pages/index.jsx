@@ -1,4 +1,5 @@
 import Loader from "@/components/Loader";
+import ArtistInfo from "@/sections/ArtistInfo";
 import CollectionInfo from "@/sections/CollectionInfo";
 import Footer from "@/sections/Footer";
 import Header from "@/sections/Header";
@@ -27,7 +28,7 @@ export default function Home() {
       <Header />
       <Sponsors />
       <CollectionInfo />
-
+      <ArtistInfo />
       <Footer />
     </>
   );

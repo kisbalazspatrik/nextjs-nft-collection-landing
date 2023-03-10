@@ -22,8 +22,14 @@ const data = [
 const Footer = () => {
   return (
     <Flex justify={"center"} className="footer-bg">
-      <Wrapper justifyContent="space-between" w="100%" my={32}>
-        <Flex>
+      <Wrapper
+        justifyContent="space-between"
+        gap={{ base: 8, lg: 0 }}
+        w="100%"
+        my={32}
+        flexDir={{ base: "column-reverse", lg: "row" }}
+      >
+        <Flex mx={{ base: "auto", lg: "0" }}>
           <Text color={colors.darkerText} fontSize="sm">
             Copyright © {new Date().getFullYear()}{" "}
             <Link href="https://nfteam.eu/" target={"_b"}>
