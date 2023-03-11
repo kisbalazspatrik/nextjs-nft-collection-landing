@@ -9,8 +9,16 @@ import React from "react";
 
 const CTA = () => {
   return (
-    <Flex bg={colors.darkBg} justify="center" id="cta" position="relative">
-      <Wrapper gap={8} mb={32} w="100%">
+    <Flex
+      bg={colors.darkBg}
+      justify="center"
+      id="cta"
+      position="relative"
+      pt={32}
+      //DELETE THIS AFTER NEW SECTION IS ADDED BELOW
+      pb={32}
+    >
+      <Wrapper gap={8} w="100%">
         <Flex
           bg={colors.primary}
           p={12}

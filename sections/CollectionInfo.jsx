@@ -11,6 +11,7 @@ const CollectionInfo = () => {
       justify="center"
       id="collection"
       position="relative"
+      pt={32}
     >
       <Image
         src="/detail1.png"
@@ -32,7 +33,7 @@ const CollectionInfo = () => {
         opacity={0.25}
         zIndex={1}
       />
-      <Wrapper flexDir={{ base: "column", lg: "row" }} gap={8} mb={32}>
+      <Wrapper flexDir={{ base: "column", lg: "row" }} gap={8}>
         <Flex flexDir={"column"} w={{ base: "100%", lg: "50%" }} align="center">
           <Flex
             bg={colors.secondaryBg}

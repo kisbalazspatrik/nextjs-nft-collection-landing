@@ -13,6 +13,7 @@ const ArtistInfo = () => {
       justify="center"
       id="artist"
       position="relative"
+      pt={32}
     >
       <Image
         src="/detail3.png"
@@ -24,7 +25,7 @@ const ArtistInfo = () => {
         opacity={0.25}
         zIndex={1}
       />
-      <Wrapper flexDir={{ base: "column-reverse", lg: "row" }} gap={8} mb={32}>
+      <Wrapper flexDir={{ base: "column-reverse", lg: "row" }} gap={8}>
         <Flex flexDir={"column"} w={{ base: "100%", lg: "50%" }} gap={8}>
           <Text
             textTransform="uppercase"
