@@ -20,12 +20,16 @@ const ArtistInfo = () => {
         position="absolute"
         w={150}
         h={"auto"}
-        bottom={0}
+        bottom={-75}
         right={{ base: 8, lg: 64 }}
         opacity={0.25}
         zIndex={1}
       />
-      <Wrapper flexDir={{ base: "column-reverse", lg: "row" }} gap={8}>
+      <Wrapper
+        flexDir={{ base: "column-reverse", lg: "row" }}
+        gap={8}
+        zIndex={2}
+      >
         <Flex flexDir={"column"} w={{ base: "100%", lg: "50%" }} gap={8}>
           <Text
             textTransform="uppercase"

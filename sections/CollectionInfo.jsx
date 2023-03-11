@@ -33,7 +33,7 @@ const CollectionInfo = () => {
         opacity={0.25}
         zIndex={1}
       />
-      <Wrapper flexDir={{ base: "column", lg: "row" }} gap={8}>
+      <Wrapper flexDir={{ base: "column", lg: "row" }} gap={8} zIndex={2}>
         <Flex flexDir={"column"} w={{ base: "100%", lg: "50%" }} align="center">
           <Flex
             bg={colors.secondaryBg}
@@ -41,7 +41,6 @@ const CollectionInfo = () => {
             pt={8}
             borderRadius={24}
             flexDir="column"
-            zIndex={2}
           >
             <Image
               src="/nfts/3.gif"
