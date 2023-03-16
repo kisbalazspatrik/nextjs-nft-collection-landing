@@ -101,7 +101,7 @@ const Header = () => {
             h={8}
             position="absolute"
             bottom={200}
-            right={100}
+            right={{base: "70%", lg: 100}}
             transform="rotate(45deg)"
           />
 
